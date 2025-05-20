@@ -12,11 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d07b001-c520-4fab-a4bf-cde99648b488" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharpEducation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharpEducation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpEducation.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpEducation.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpEducation.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpEducation.sln.DotSettings.user" afterDir="false" />
-    </list>
+    <list default="true" id="2d07b001-c520-4fab-a4bf-cde99648b488" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,7 +221,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747326468846</updated>
       <workItem from="1747326472361" duration="496000" />
-      <workItem from="1747750072438" duration="7024000" />
+      <workItem from="1747750072438" duration="7347000" />
     </task>
     <task id="LOCAL-00001" summary="Создал решение для домашек">
       <option name="closed" value="true" />
@@ -251,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747329938195</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавлена библиотэка классов телефонного справочника с исполняемым консольным приложением">
+      <option name="closed" value="true" />
+      <created>1747764639753</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747764639753</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +268,8 @@
     <MESSAGE value="Создал решение для домашек" />
     <MESSAGE value="Домашка №1 выполнена. Программа HelloWorld написана" />
     <MESSAGE value="Библиотека команд справочника" />
-    <option name="LAST_COMMIT_MESSAGE" value="Библиотека команд справочника" />
+    <MESSAGE value="Добавлена библиотэка классов телефонного справочника с исполняемым консольным приложением" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена библиотэка классов телефонного справочника с исполняемым консольным приложением" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
