@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBookLib", "PhoneBookLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBookApp", "PhoneBookApp\PhoneBookApp.csproj", "{025B4894-EF09-4C94-A990-312AE8418DC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookkeping", "Bookkeping\Bookkeping.csproj", "{1A9C7AED-45E0-4183-8682-307166FFB74C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookkeping_with_exceptions", "Bookkeping_with_exceptions\Bookkeping_with_exceptions.csproj", "{87ACDD5E-A429-49DB-8ACC-68658A40731D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{025B4894-EF09-4C94-A990-312AE8418DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{025B4894-EF09-4C94-A990-312AE8418DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{025B4894-EF09-4C94-A990-312AE8418DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9C7AED-45E0-4183-8682-307166FFB74C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9C7AED-45E0-4183-8682-307166FFB74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9C7AED-45E0-4183-8682-307166FFB74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9C7AED-45E0-4183-8682-307166FFB74C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87ACDD5E-A429-49DB-8ACC-68658A40731D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87ACDD5E-A429-49DB-8ACC-68658A40731D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87ACDD5E-A429-49DB-8ACC-68658A40731D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87ACDD5E-A429-49DB-8ACC-68658A40731D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
