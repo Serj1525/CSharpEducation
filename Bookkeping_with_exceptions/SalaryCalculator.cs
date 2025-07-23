@@ -1,13 +1,20 @@
 namespace Bookkeping_with_exceptions;
-
-public class SalaryCalculator
+/// <summary>
+/// Класс для расчета зарплаты сотрудника (оклад + премия).
+/// </summary>
+internal class SalaryCalculator
 {
-    public static double CalculateSalary(double baseSalary, double bonusPercentage)
+    internal static double CalculateSalary(double baseSalary, double bonusPercentage)
     {
         return baseSalary + (baseSalary * bonusPercentage / 100);
     }
 
-    public void EditBonusPercentage(EmployeeManager employeeManager)
+    /// <summary>
+    /// Редактирование % премии и запись в список сотрудников для расчета зарплаты.
+    /// </summary>
+    /// <param name="employeeManager">Класс для управления сотрудников.</param>
+    /// <exception cref="FormatException">Исключение при обработке неверного формата.</exception>
+    internal void EditBonusPercentage(EmployeeManager employeeManager)
     {
         Console.Write("Введите новый процент премии: ");
         if (double.TryParse(Console.ReadLine(), out double newBonus))

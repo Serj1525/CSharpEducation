@@ -1,10 +1,19 @@
 namespace Bookkeping_with_exceptions;
-
-public class EmployeeManager
+/// <summary>
+/// Управление списком сотрудников: добавление, удаление сотрудника;
+/// редактирование данных сотрудника, вывод списка со всеми сотрудниками.
+/// </summary>
+internal class EmployeeManager
 {
-    public List<Employee> Employees { get; } = new List<Employee>();
+    internal List<Employee> Employees { get; } = new List<Employee>();
 
-    public void AddEmployee(PositionManager positionManager)
+    /// <summary>
+    /// Добавление сотрудника в список
+    /// </summary>
+    /// <param name="positionManager">Управление списком должностей.</param>
+    /// <exception cref="ApplicationException">Исключение при сбое работы метода.</exception>
+    /// <exception cref="FormatException">Исключение при обработке неверного формата.</exception>
+    internal void AddEmployee(PositionManager positionManager)
     {
         Console.Clear();
         Console.Write("Введите имя сотрудника: ");
@@ -31,8 +40,13 @@ public class EmployeeManager
             throw new FormatException("Некорректное значение ID.");
         }
     }
-
-    public void RemoveEmployee()
+    
+    /// <summary>
+    /// Удаление сотрудника из списка.
+    /// </summary>
+    /// <exception cref="ApplicationException">Исключение при сбое работы метода.</exception>
+    /// <exception cref="FormatException">Исключение при обработке неверного формата.</exception>
+    internal void RemoveEmployee()
     {
         Console.Clear();
         Console.Write("Введите ID сотрудника для удаления: ");
@@ -54,8 +68,14 @@ public class EmployeeManager
             throw new FormatException("Некорректное значение ID.");
         }
     }
-
-    public void EditEmployee(PositionManager positionManager)
+    
+    /// <summary>
+    /// Редактирование данных сотрудника (имя, фамилия, должность).
+    /// </summary>
+    /// <param name="positionManager">Управление списком должностей.</param>
+    /// <exception cref="ApplicationException">Исключение при сбое работы метода.</exception>
+    /// <exception cref="FormatException">Исключение при обработке неверного формата.</exception>
+    internal void EditEmployee(PositionManager positionManager)
     {
         Console.Clear();
         Console.Write("Введите ID сотрудника для редактирования: ");
@@ -98,8 +118,11 @@ public class EmployeeManager
             throw new FormatException("Некорректное значение ID.");
         }
     }
-
-    public void DisplayEmployees()
+    
+    /// <summary>
+    /// Вывод списка добавленных сотрудников.
+    /// </summary>
+    internal void DisplayEmployees()
     {
         Console.Clear();
         Console.WriteLine("Список сотрудников:");

@@ -1,10 +1,17 @@
 namespace Bookkeping_with_exceptions;
-
-public class PositionManager
+/// <summary>
+/// Класс для управления списком должностей: добавление, удаление должности,
+/// редактирование данных должности, поиск должности по ID, вывод списка должностей.
+/// </summary>
+internal class PositionManager
 {
-    public List<Position> Positions { get; } = new List<Position>();
+    internal List<Position> Positions { get; } = new List<Position>();
 
-    public void AddPosition()
+    /// <summary>
+    /// Добавление должности в список
+    /// </summary>
+    /// <exception cref="FormatException">Исключение при обработке неверного формата.</exception>
+    internal void AddPosition()
     {
         Console.Clear();
         Console.Write("Введите название должности: ");
@@ -21,7 +28,13 @@ public class PositionManager
         }
     }
 
-    public void RemovePosition(EmployeeManager employeeManager)
+    /// <summary>
+    /// Удаление должности из списка.
+    /// </summary>
+    /// <param name="employeeManager">Класс для управления сотрудниками.</param>
+    /// <exception cref="ApplicationException">Исключение при сбое работы метода</exception>
+    /// <exception cref="FormatException">Исключение при обработке неверного формата</exception>
+    internal void RemovePosition(EmployeeManager employeeManager)
     {
         Console.Clear();
         Console.Write("Введите ID должности для удаления: ");
@@ -51,7 +64,14 @@ public class PositionManager
         }
     }
 
-    public void EditPosition(EmployeeManager employeeManager)
+    /// <summary>
+    /// Редактирование данных должности (название, оклад).
+    /// Обновляет зарплату сотрудников с конкретной должностью при изменении оклада.
+    /// </summary>
+    /// <param name="employeeManager"></param>
+    /// <exception cref="ApplicationException">Исключение при сбое работы метода.</exception>
+    /// <exception cref="FormatException">Исключение при обработке неверного формата.</exception>
+    internal void EditPosition(EmployeeManager employeeManager)
     {
         Console.Clear();
         Console.Write("Введите ID должности для редактирования: ");
@@ -93,12 +113,20 @@ public class PositionManager
         }
     }
 
-    public Position GetPositionById(int id)
+    /// <summary>
+    /// Вывод данных должности по ID.
+    /// </summary>
+    /// <param name="id">Значение ID должности.</param>
+    /// <returns> Возвращает данные должности в найденой позиции по ID.</returns>
+    internal Position GetPositionById(int id)
     {
         return Positions.Find(p => p.Id == id);
     }
 
-    public void DisplayPositions()
+    /// <summary>
+    /// Вывод списка должностей.
+    /// </summary>
+    internal void DisplayPositions()
     {
         Console.Clear();
         Console.WriteLine("Список должностей:");

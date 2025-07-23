@@ -4,6 +4,9 @@ using System;
 
 class Program
 {
+    /// <summary>
+    /// Запуск меню с проверкой ошибок.
+    /// </summary>
     static void Main()
     {
         EmployeeManager employeeManager = new EmployeeManager();
@@ -44,6 +47,14 @@ class Program
         }
     }
 
+    /// <summary>
+    /// Выбор пункта меню с запуском функции.
+    /// </summary>
+    /// <param name="choice">Пункт меню.</param>
+    /// <param name="employeeManager">Класс для управления сотрудниками.</param>
+    /// <param name="positionManager">Класс для управления должностями.</param>
+    /// <param name="salaryCalculator">Класс для расчета зарплаты сотрудников.</param>
+    /// <exception cref="ApplicationException">Исключение при сбое работы метода.</exception>
     static void ExecuteAction(string choice, EmployeeManager employeeManager, PositionManager positionManager, SalaryCalculator salaryCalculator)
     {
         switch (choice)
